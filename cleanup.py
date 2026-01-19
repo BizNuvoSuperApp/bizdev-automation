@@ -49,4 +49,6 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--older-than', type=check_positive, default=default_older_than, help='How many days older than today')
     args = parser.parse_args()
 
+    print(f"Processing {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
+
     main(args)
