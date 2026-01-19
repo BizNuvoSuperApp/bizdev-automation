@@ -52,3 +52,5 @@ if __name__ == '__main__':
     print(f"Processing {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
 
     main(args)
+
+    print("\n\n")
