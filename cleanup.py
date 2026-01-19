@@ -38,6 +38,7 @@ def main(args):
         for index, file_path in enumerate(file_paths):
             if index >= keep and file_path.stat().st_mtime < older_than:
                 print(f"delete {file_path.stat().st_mtime}\t{file_path.name}")
+                file_path.unlink()
             else:
                 print(f"keep {file_path.stat().st_mtime}\t{file_path.name}")
 
