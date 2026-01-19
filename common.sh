@@ -1,4 +1,4 @@
-. $HOME/.builderrc
+. ~/.builderrc
 
 EX_LOCK_CONFLICT=200
 EX_NO_BUILD=201
